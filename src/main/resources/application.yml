@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: authenticateV1
+  datasource:
+    username: root
+    password: Maxak351#
+    url: jdbc:mysql://localhost:3306/stockmarket
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 8087
+
+logging:
+  level:
+    org.springframework.web: ERROR
+    com.market.savecompany: INFO
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+  file: <logPath>/test.log
