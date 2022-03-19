@@ -3,7 +3,7 @@ spring:
     name: authenticateV1
   datasource:
     username: root
-    password: root
+    password: Maxak351#
     url: jdbc:mysql://localhost:3306/stockmarket
   jpa:
     hibernate:
