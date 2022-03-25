@@ -2,10 +2,11 @@ spring:
   application:
     name: authenticateV1
   datasource:
-    username: root
-    password: Maxak351#
-    url: jdbc:mysql://localhost:3306/stockmarket
-  jpa:
+    username: ${RDS_USERNAME:root}
+    password: ${RDS_PASSWORD:Maxak351#}
+    url: jdbc:mysql://${RDS_HOSTNAME:localhost}:${RDS_PORT:3306}/${RDS_DB_NAME:stockmarket}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
     hibernate:
       ddl-auto: update
     show-sql: true
