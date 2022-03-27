@@ -15,7 +15,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 
 @RestController
-@CrossOrigin(origins = "http://65.2.124.176:4200", maxAge = 3600)
+@CrossOrigin(origins = "*", maxAge = 3600)
 @RequestMapping("/api/v1.0/market/user")
 public class UserController {
 
